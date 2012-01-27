@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Shawn Biddle">
+		<meta itemprop="name" content="RanvierMUD - Node.js MUD engine - Features">
+		<meta itemprop="description" content="A Node.js based MUD engine with full localization support">
+
+		<title>RanvierMUD - A Node.js based MUD engine - Features</title>
+		<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<link href="/css/bootstrap.css" rel="stylesheet">
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="fill">
+				<div class="container">
+					<a class="brand" href="/">RanvierMUD</a>
+					<ul class="nav">
+						<li><a href="/">Home</a></li>
+						<li><a href="https://github.com/shawncplus/ranviermud">Code</a></li>
+						<li class="active"><a href="#">Features</a></li>
+						<li><a href="https://github.com/shawncplus/ranviermud/wiki">Docs</a></li>
+						<li><a href="http://blog.ranviermud.com/">Blog</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="page-header">
+				<h1>Features <small>Stuff that you get out of the box</small></h1>
+			</div>
+
+			<div class="row">
+				<div class="span16">
+					<dl>
+						<dt>Localization</dt>
+						<dd>Support for localizing any string displayed to the player after they log in. E.g., Player A and Player B log in, play the same game and see a different language. Same items, npcs, rooms, etc, different language.</dd>
+
+						<dt>Scripting</dt>
+						<dd>It's in Javascript! No need for a shitty DSL. The codebase is javascript, the scripting is javascript.</dd>
+
+						<dt>Events</dt>
+						<dd>Scripting is event-based. Put a listener in the script attached to your mob and it'll automagically happen when the event is emitted. Adding new events is easy as <code>npc.emit('eventName');</code></dd>
+
+						<dt>JSON Playerfile Storage</dt>
+						<dd>Pfile saving in JSON, easy to parse for external usage</dd>
+
+						<dt>YAML-described Entities</dt>
+						<dd>Rooms, items, and npcs are easily described in yaml. No wierd ~~~~ and byte-specific parsing that requires a GUI editor to build.</dd>
+
+						<dt>Flexible Room System</dt>
+						<dd>Arbitrary room exits custom to each room not locked into n/s/e/w and it's not a pain in the ass to add them</dd>
+
+						<dt>Leveling</dt>
+						<dd>Built into the codebase is a basic leveling system that can be easily customized to your desired xp formulae</dd>
+
+						<dt>Combat</dt>
+						<dd>Due to the way the repl works it could be used to do turn-based or real-time combat without changing the base functionality.</dd>
+
+						<dt>Skills</dt>
+						<dd>Basic, easily customizable/overhauled skill system</dd>
+
+						<dt>Channels</dt>
+						<dd>Basic channel system and incredibly simple framework for adding new channels</dd>
+					</dl>
+				</div>
+			</div>
+
+			<footer>
+			<p>&copy; Shawn Biddle 2012</p>
+			</footer>
+
+		</div> <!-- /container -->
+		<script type="text/javascript">
+			(function() {
+			 var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			 po.src = 'https://apis.google.com/js/plusone.js';
+			 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			 })();
+		</script>
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-28253658-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			 })();
+		</script>
+	</body>
+</html>
+
+
