@@ -148,7 +148,7 @@ var Events = {
 					return false;
 				}
 
-				
+
 				if (!dontwelcome) {
 					arg.write(L('PASSWORD'));
 				}

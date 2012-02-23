@@ -49,7 +49,7 @@ var locale  = argv.locale || 'en',
 	items = new Items(),
 	npcs  = new Npcs(),
 	server,
-	
+
 	// Stuff for the server executable
 	l10n,
 	respawnint,
@@ -288,7 +288,7 @@ process.stdin.on('data', function (data)
 {
 	data = data.trim();
 	var command = data.split(' ')[0];
-	
+
 	if (!(command in server_commands)) {
 		console.log("That's not a real command...");
 		return;

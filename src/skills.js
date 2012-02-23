@@ -33,7 +33,7 @@ exports.Skills = {
 					player.say(L(player.getLocale(), 'warrior', 'TACKLE_COOLDOWN'));
 					return true;
 				}
-				
+
 				var target = player.isInCombat();
 				if (!target) {
 					player.say("Somehow you're in combat with a ghost");
